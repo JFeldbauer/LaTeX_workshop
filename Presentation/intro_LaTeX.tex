@@ -34,7 +34,9 @@
 \usetheme{Boadilla}
 \usecolortheme{beaver}
 \setbeamertemplate{footline}[frame number]
-
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{section in toc}[square]
 \title[Introduction to \LaTeX]{A short introduction to \LaTeX}
 \author[J.Feldbauer, C. Ordóñez]{Johannes Feldbauer \& César Ordóñez}
 \date{\today}
@@ -275,7 +277,8 @@ The source code of a \LaTeX{} document is a plain text file with ending \textit{
     \end{table}
   \end{LTXexample}
   \begin{block}{}
-  \footnotesize TIP: Tables can be exported from Excel installing add-ons like \href{Calc2Latex}{https://www.ctan.org/pkg/excel2latex}
+  \footnotesize TIP: Tables can be exported from Excel installing add-ons like \href{https://www.ctan.org/pkg/excel2latex}{Calc2Latex}\\
+  in R you can use the \href{https://cran.r-project.org/web/packages/xtable/}{\textit{xtable} package}
   \end{block}
 
 
