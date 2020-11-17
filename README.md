@@ -16,11 +16,11 @@ sudo apt install texlive-base
 
 ### Mac
 
-MacTeX: https://www.tug.org/mactex/
+MacTeX: https://www.tug.org/mactex/ and some informations on the installer [here](https://www.tug.org/mactex/theinstaller.html)
 
 ### Windows
 
-MiKTex: https://miktex.org/
+MiKTex: https://miktex.org/ they have a installation tutorial available [here](https://miktex.org/howto/install-miktex)
 
 ## LaTeX Editor
 
