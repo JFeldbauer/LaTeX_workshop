@@ -24,7 +24,7 @@ MiKTex: https://miktex.org/ they have a installation tutorial available [here](h
 
 ## LaTeX Editor
 
-In general you could just use any text editor (e.g. [Emacs](https://www.gnu.org/software/emacs/) or [notepad++](https://notepad-plus-plus.org/downloads/)), but there are a lot of good Integrated development environments and we suggest to use [TeXstudio](https://www.texstudio.org/). But feel free to find out your own preferred work flow.
+In general you could just use any text editor (e.g. [Emacs](https://www.gnu.org/software/emacs/) or [notepad++](https://notepad-plus-plus.org/downloads/)), but there are a lot of good [integrated development environments](https://en.wikipedia.org/wiki/Integrated_development_environment) and we suggest to use [TeXstudio](https://www.texstudio.org/). But feel free to find out your own preferred work flow.
 
 ## Online Editor
 
