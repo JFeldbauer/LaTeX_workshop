@@ -142,6 +142,7 @@ Please try to complete all given tasks. If you already have some experience try 
     \item Refer to a (sub)section and the page it is on
     \item Add you own reference and cite them
     \item Try different style of referencing (Hint: use of different variations of command cite)
+    \item add some formatted source code (Hint: use the lstlisting environment)
 \end{enumerate}
 
 \subsection{Advanced tasks:}
@@ -179,20 +180,20 @@ and now here is my favorite equation:
 	\sum_{i=1}^{n} \bm{\beta_{i:r}} \bm{r} x_i + \bm{r}^\intercal \bm{B_{r:s}} \bm{s},
 \end{equation}
 
-this is a figure I created with a placement specifier set to \texttt{h!} and left aligned
+Figure \ref{fig:myfigure} is a figure I created with a placement specifier set to \texttt{t} and left aligned
 
-\begin{figure}[h!]
+\begin{figure}[t]
 	\raggedright
 	\includegraphics[width=0.25\linewidth]{my_image}
-	\caption[short text]{long caption text for my figure}
+	\caption[short text]{long caption text for my figure with placement specifier set to \texttt{t}}\label{fig:myfigure}
 \end{figure}
 
-my own table is this:
+my own table is \autoref{tab:mytable} with a placement specifier set to \texttt{b}:
 
-	\begin{table}[h!]
+	\begin{table}[b]
 	\centering
 	\caption{Main morphological features and withdrawal depths of the three investigated reservoirs.}
-	\label{tab:reservoirs}
+	\label{tab:mytable}
 	\tiny
 	\begin{tabular}{lllllllll}\hline
 		Reservoir    & Depth & Surface   & Volume     & Altitude & Latitude    &
@@ -218,6 +219,16 @@ my own table is this:
 The \autoref{sec:solutions} starts on page \pageref{sec:solutions}. And here is the citation for my first paper \citet{feldbauer_managing_2020} and now with brackets around it \citep{feldbauer_managing_2020}.
 
 
+In \autoref{mycode} I give you some formatted R source code using the \textit{lstlisting} environment from the \textit{listings} package. I specify the language of the source code using the \texttt{language} argument, gave the caption using the \texttt{caption} argument, and set te \textit{label} to refer to by using the \texttt{label} argument. Some more information about the \textit{listings} package can be found here: \url{https://en.wikibooks.org/wiki/LaTeX/Packages/Listings}
+
+\begin{lstlisting}[language=R, frame=single, caption=some code in R, label=mycode]
+# some comment
+x <- seq(0, 123, by = 0.45)
+y <- x^2 - 0.4*x + 14.24 + rnorm(length(x))
+# plot the result
+plot(x, y, "l")
+\end{lstlisting}
+
 \subsection{Advanced tasks:}
 
 {\fontfamily{cmss}\selectfont
@@ -240,13 +251,13 @@ Changing the way equations (or any other object that is numbered) are counted ca
 \end{itemize}
 
 If you want to change the item globally (for the whole document) you can use:
-\begin{lstlisting}
+\begin{lstlisting}[language=tex]
 \renewcommand{\labelitemii}{+}         % first level items
 \renewcommand{\labelitemiii}{$\circ$}  % second level items
 \renewcommand{\labelitemiv}{$\bullet$} % third level items
 \end{lstlisting}
 
-A good way to show code (like above) is the \textit{lstlisting} environment from the \textit{listings} package.
+As before I used the \textit{lstlisting} environment from the \textit{listings} package to show code.
 
 If you want to change the document to a two column layout you can just add the \textit{twocolumn} argument to the documentclass like this:\\ \texttt{\textbackslash documentclass[twocolumn]\{article\}}. Once you change this you will see that also the figures and tables are now shown only in one column. If you want a figure or table span over both columns you can just change the name of the environment by adding an asterisk (*) e.g.
 
