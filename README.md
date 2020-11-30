@@ -4,7 +4,7 @@ This is material for a short introduction workshop to LaTeX. It is mainly based 
 
 ## Installation of LaTeX distribution
 
-There are different LaTeX distributions for several OS available (a overview can be found [here](https://www.latex-project.org/get/)), we suggest to install the following ones:
+There are different LaTeX distributions for several OS available (a overview can be found [here](https://www.latex-project.org/get/)), we suggest to install one of the following:
 
 ### Linux
 
@@ -22,9 +22,13 @@ MacTeX: https://www.tug.org/mactex/ and some informations on the installer [here
 
 MiKTex: https://miktex.org/ they have a installation tutorial available [here](https://miktex.org/howto/install-miktex)
 
+### TinyTex
+
+TinyTex works across different OS and does not require admin privileges to install. It is interesting especially for R users (but also for others) as it can automatically install missing packages from within R. There are installation instructions and some general information about LaTeX distributions [here](https://yihui.org/tinytex/).
+
 ## LaTeX Editor
 
-In general you could just use any text editor (e.g. [Emacs](https://www.gnu.org/software/emacs/) or [notepad++](https://notepad-plus-plus.org/downloads/)), but there are a lot of good [integrated development environments](https://en.wikipedia.org/wiki/Integrated_development_environment) and we suggest to use [TeXstudio](https://www.texstudio.org/). But feel free to find out your own preferred work flow.
+In general you could just use any text editor (e.g. [Emacs](https://www.gnu.org/software/emacs/) or [notepad++](https://notepad-plus-plus.org/downloads/)), but there are a lot of good [integrated development environments (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) and we suggest to use [TeXstudio](https://www.texstudio.org/). It is worth noticing that also RStudio can be used as a LaTeX IDE. But feel free to find out your own preferred work flow.
 
 ## Online Editor
 
