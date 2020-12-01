@@ -132,32 +132,34 @@
 The source code of a \LaTeX{} document is a plain text file with ending \textit{.tex}.
 \begin{columns}
   \begin{column}{0.8\textwidth}
-    \begin{lstlisting}[showspaces = false,showtabs = false, basicstyle=\tiny\ttfamily]
-      \documentclass{article}   % the first command must set the class of the document
-      \usepackage{packagename}  % additional packages are included using this command
-      \bibliographystyle{style} % set the style of citations
+    \begin{lstlisting}[showspaces = false,showtabs = false,language=tex,
+    basicstyle=\tiny\ttfamily]
+\documentclass{article}   % the first command must set the class of the document
+\usepackage{packagename}  % additional packages are included using this command
+\bibliographystyle{style} % set the style of citations
 
-      \author{A. Uthor}         % name of the author
+\author{A. Uthor}         % name of the author
 
-      \begin{document}
-      \maketitle        % create a title
-      \tableofcontents  % create a table of content from the given sections, etc
-      \listoffigures    % create a table of figures
-      \listoftables     % create a table of tables
+\begin{document}
+\maketitle        % create a title
+\tableofcontents  % create a table of content from the given sections, etc
+\listoffigures    % create a table of figures
+\listoftables     % create a table of tables
 
-      \section{Introduction}
+\section{Introduction}
 
-      Some text about the figure \ref{key}. And some more Text without any content but with source cited \citep{bibid}. Now the text is at the end.
+Some text about the figure \ref{key}. And some more Text without any content
+but with source cited \citep{bibid}. Now the text is at the end.
 
-      \begin{figure}
-        \centering
-        \includegraphics[width=\textwidth]{imagefile}
-        \caption[short text]{text}\label{key}
-      \end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{imagefile}
+\caption[short text]{text}\label{key}
+\end{figure}
 
-      \bibliography{bib_file}   % name of the biblography file
+\bibliography{bib_file}   % name of the biblography file
 
-      \end{document}
+\end{document}
     \end{lstlisting}
   \end{column}
   \begin{column}{0.2\textwidth}
@@ -424,6 +426,9 @@ Another study by \citet{huisman_2004} showed something else.
     \item Overleaf \url{https://www.overleaf.com/learn}
     \item The Not So Short Introduction to \LaTeXe{} by Tobias Oetiker, Hubert Partl, Irene Hyna and Elisabeth Schlegl \url{https://tobi.oetiker.ch/lshort/lshort.pdf}
     \item \LaTeXe{} cheat sheet: \url{https://wch.github.io/latexsheet/}
+    \item book: "(More) Math into LaTeX" with short course available online and
+    including videos
+    \url{https://www.ctan.org/texarchive/info/Math_into_LaTeX-4}
     \item \LaTeX{} for complete Novices by Nicola L. C. Talbot \url{http://www.dickimaw-books.com/latex/novices/}
     \item wikibooks \LaTeX{}: \url{https://en.wikibooks.org/wiki/LaTeX}
   \end{itemize}
