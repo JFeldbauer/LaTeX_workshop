@@ -164,10 +164,19 @@ but with source cited \citep{bibid}. Now the text is at the end.
   \end{column}
   \begin{column}{0.2\textwidth}
     \begin{tikzpicture}
-      \onslide<1->{\draw [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt] (-3,4.3) -- (-3,4.6) node[black,midway,xshift=1.5cm]{\footnotesize Documentclass};}
-      \onslide<2->{\draw [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt] (-3,2.8) -- (-3,4.1) node[black,midway,xshift=1.5cm]{\footnotesize Preamble};}
-      \onslide<3->{\draw [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt] (-3,-2.2) -- (-3,2.5) node[black,midway,xshift=1.5cm]{\footnotesize Document};}
-    \end{tikzpicture}
+    \draw
+    [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt]
+    (-3,3.95) -- (-3,4.25) node[black,midway,xshift=1.5cm]{\footnotesize
+    Documentclass};\pause
+    \draw
+    [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt]
+    (-3,2.65) -- (-3,3.85) node[black,midway,xshift=1.5cm]{\footnotesize
+    Preamble};\pause
+    \draw
+    [decorate,decoration={brace,mirror,amplitude=10pt},xshift=0pt,yshift=0pt]
+    (-3,-2.2) -- (-3,2.5) node[black,midway,xshift=1.5cm]{\footnotesize
+    Document};
+\end{tikzpicture}
   \end{column}
 \end{columns}
 \end{frame}
@@ -199,19 +208,19 @@ but with source cited \citep{bibid}. Now the text is at the end.
   \begin{lstlisting}[showspaces = false,showtabs = false,basicstyle=\scriptsize\ttfamily,language=tex]
 \documentclass{beamer}
   % begin preamble
-\usepackage{abstract}
-\usepackage{float}
-\usepackage{amssymb}
-\usepackage{hyperref}
-\usepackage[round]{natbib}
+\usepackage{abstract}       % a package that provides an abstract environment
+\usepackage{float}          % provide floating environments
+\usepackage{amssymb}        % mathematical symbols
+\usepackage{hyperref}       % package for cross-references
+\usepackage[round]{natbib}  % package for bibliography
 
-\bibliographystyle{style} % set the style of citations
-\title{good read}
-\author{Anna und Arthur}
+\bibliographystyle{style}   % set the style of citations
+\title{good read}           % title of the document
+\author{Anna und Arthur}    % author name
 
-\beamertemplatenavigationsymbolsempty
-\usecolortheme{beaver}
-\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty       % no navigation symbols on pdf
+\usecolortheme{beaver}                      % color theme of the pdf
+\setbeamertemplate{footline}[frame number]  % frame number in the footline
   % begin text body
 \begin{document}
   \end{lstlisting}
